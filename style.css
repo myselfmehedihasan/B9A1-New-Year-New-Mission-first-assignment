@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+BE+WAL:wght@100..400&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* shared section */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Add box-sizing: border-box */
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+.container {
+  margin: 50px auto 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 90vw; */
+
+  width: 100vw; 
+  max-width: 80vw; /* Set the maximum width to 90% of the viewport width */
+}
+
+/* New Year Party Celebration section */
+
+.banner-content {
+  background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
+    url("./resources/BannerImage.png");
+  background-size: cover; /* Set the width to 100% of the viewport width and height to auto */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh; /* Set the height to 100% of the viewport height */
+  width: 80vw; /* Set the width to 100% of the viewport width */
+  margin: 0 auto; /* Center the banner horizontally */
+  border-radius: 8px;
+}
+
+/* 65% OFF section */
+
+/* .categories{
+  margin-top: 120px;
+} */
+
+.banner-content h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container .banner-content p {
+  color: #fff;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 95px; /* 131.944% */
+  max-width: 800px;
+}
+
+.categories h1 {
+  color: #f00;
+  text-align: center;
+  font-family: Inter;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 48px;
+}
+.categories p {
+  color: #f00;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.categories #p2 {
+  color: #070211;
+  text-align: center;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding-bottom: 48px;
+}
+
+/* Welcome to midnight party section */
+
+.content-banner {
+  background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
+    url("./resources/Vectorrr.png");
+  background-size: cover; /* Set the width to 100% of the viewport width and height to auto */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: cover; /* Set the width to 100% of the viewport width and height to auto */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 70vh; /* Set the height to 100% of the viewport height */
+  width: 80vw; /* Set the width to 100% of the viewport width */
+  margin: 120px auto; /* Center the banner horizontally */
+  border-radius: 8px;
+}
+
+.content-banner .content-elements {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 70px 130px;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content-banner .content-elements .content-text * {
+  padding-bottom: 20px;
+  max-width: 700px;
+}
+
+.content-banner .content-elements .content-text h1 {
+  color: #fff;
+  font-family: Merriweather;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 88px; /* 137.5% */
+  letter-spacing: 7.04px;
+}
+
+.content-banner .content-elements .content-text p {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+
+.content-banner .content-elements .content-text a {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+/* Place: New Park Hotel
+Date: 31 December Night 2023
+Time: Evening 7.30 pm to 12.30 am */
+
+.address-background {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1) 0%,
+    rgba(255, 0, 0, 0) 100%
+  );
+}
+
+.address {
+  text-align: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.address p {
+  color: #070211;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  text-transform: capitalize;
+}
+
+.address .address1 {
+  color: #f00;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 175% */
+  text-transform: capitalize;
+}
+
+.address button {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 50px;
+  border: none;
+  border-radius: 8px;
+  background: #f00;
+  padding: 16px 32px;
+}
+
+/* Coming Soon section */
+
+.coming-soon {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 130px;
+}
+
+.coming-soon .lefts {
+  max-width: 500px;
+}
+
+.coming-soon .lefts * {
+  margin-bottom: 20px;
+}
+.coming-soon .lefts h1 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.coming-soon .lefts p {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+
+.coming-soon .lefts #offer {
+  color: #f00;
+  /* text-align: center; */
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.coming-soon .middles img {
+  border-radius: 50%;
+  /* border: 0px solid white; */
+  box-shadow: 0 0 0 10px white, 0 0 0 20px #f00;
+  margin-right: 50px;
+}
+
+.coming-soon .rights * {
+  margin-bottom: 20px;
+}
+
+.coming-soon .rights {
+  max-width: 350px;
+}
+
+.coming-soon .rights h2 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* margin-top: 100px; */
+}
+
+.coming-soon .rights p {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+
+.coming-soon .rights img {
+  padding-top: 10px;
+}
+
+/* Holidays Sale 50% */
+
+
+.holiday-text * {
+  margin-bottom: 20px;
+}
+.holiday-text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 880px;
+}
+
+.holiday-text h3 {
+  color: #070211;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.holiday-text h1 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.holiday-text #attractive {
+  color: #f00;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.holiday-text p {
+  color: rgba(7, 2, 17, 0.6);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.holiday-visual {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  margin-top: 120px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* top: 250px; */
+}
+.discount {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  z-index: 1;
+  /* top: 300px; */
+  left: 150px;
+}
+
+.woman {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* top: 230px; */
+  bottom: 70px;
+  right: 2px;
+}
+
+.red-rectangle {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 300px;
+}
+
+.red-rectangle img {
+  width: 80vw;
+}
+
+/* Our Awesome Portfolio */
+.gift {
+  width: 100%;
+  margin-top: -320px;
+}
+
+.gift-text * {
+  margin-bottom: 20px;
+}
+
+.gift-text h3 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.gift-text h1 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.gift-text p {
+  color: rgba(7, 2, 17, 0.6);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  /* max-width: 900px; */
+}
+
+.gift-image,
+.gift-image2 {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gift-image img {
+  width: 100%;
+}
+
+.gift-image2 img {
+  width: 100%;
+}
+
+/* Subscribe Newsletter */
+
+.newsletter {
+  border-radius: 16px;
+  background: rgba(255, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 1340px;*/
+  height: 600px;
+  width: 100%;
+  /* Set the width to 100% of the parent container */
+  margin-left: auto; /* Center the image horizontally */
+  margin-right: auto;
+}
+
+.newsletter img {
+  padding-bottom: 40px;
+}
+.newsletter h1 {
+  color: #070211;
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  color: rgba(7, 2, 17, 0.6);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+  max-width: 900px;
+  padding-bottom: 50px;
+}
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  width: 100%;
+  max-width: 600px;
+}
+.newsletter-form input {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  border-radius: 50px 0 0 50px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(7, 2, 17, 0.3);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 25px 267px 25px 30px;
+}
+.newsletter-form button {
+  border: none;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 15px 30px;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+}
+/* footer section  */
+footer {
+  background-color: #070211;
+  /* margin: 50px auto  ; */
+
+  /* margin: 50px auto 120px; */
+  
+  /* width: 100vw; 
+  max-width: 80vw; */
+}
+
+.footer-up {
+  display: flex;
+  align-items: center;
+  padding-top: 100px ;
+  padding-bottom: 50px ;
+  justify-content: space-around;
+  gap: 560px;
+}
+
+.footer-up-left{
+  max-width: 380px;
+}
+
+footer p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 166.667% */
+}
+
+.footer-middle{
+  padding: 48px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+hr{
+  
+width: 90%;
+max-width: 80vw;
+margin: 0 auto;
+
+
+
+  height: 0.5px; 
+  border: none; 
+  background-color: #ccc; 
+
+
+}
+
+.footer-down{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  padding-top: 50px ;
+  padding-bottom: 100px ;
+
+  justify-content: space-around;
+  gap: 735px;
+  
+}
